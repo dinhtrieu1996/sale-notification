@@ -1,0 +1,230 @@
+#simesy-sb-wrapper .simesy-sb-image-wrapper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 128px;
+  border-radius: 0;
+  display: table-cell;
+  vertical-align: top
+}
+
+#simesy-sb-wrapper .message-wrapper {
+  display: table-cell;
+  vertical-align: top;
+  padding: 20px;
+  position: relative
+}
+
+div#simesy-sb-wrapper .message-wrapper h4 {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.22em !important;
+  text-transform: none;
+  padding-bottom: 5px !important;
+  font-weight: bold
+}
+
+.simesy-sb-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word
+}
+
+div#simesy-sb-wrapper .simesy-sb-hide a {
+  text-decoration: underline !important;
+  text-transform: none !important
+}
+
+.simesy-sb-close {
+  position: relative;
+  font-size: 24px;
+  font-family: 'Arial',sans-serif !important;
+  line-height: 1.4;
+  vertical-align: top;
+  text-align: center;
+  width: 40px;
+  display: table-cell;
+  cursor: pointer;
+  opacity: .6
+}
+
+.simesy-sb-close:hover,.simesy-sb-close:active,.simesy-sb-close:visited,.simesy-sb-close {
+  text-decoration: none !important;
+  color: black;
+  background-color: none !important
+}
+
+.simesy-sb-top-left {
+  top: 12px;
+  left: 12px
+}
+
+.simesy-sb-top-right {
+  top: 12px;
+  right: 12px
+}
+
+.simesy-sb-bottom-right {
+  right: 12px;
+  bottom: 12px
+}
+
+.simesy-sb-bottom-left {
+  bottom: 12px;
+  left: 12px
+}
+
+#simesy-sb-wrapper {
+  position: fixed;
+  z-index: 99999999;
+  pointer-events: none;
+  max-width: 90%
+}
+
+#simesy-sb-wrapper * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+#simesy-sb-wrapper>div {
+  display: table;
+  position: relative;
+  pointer-events: auto;
+  overflow: hidden;
+  margin: 0 0 10px;
+  background-color: white
+}
+
+#simesy-sb-wrapper>div.simesy-sb-ds-subtle {
+  -webkit-box-shadow: 0 1px 7px rgba(0,0,0,0.16);
+  box-shadow: 0 1px 7px rgba(0,0,0,0.16)
+}
+
+#simesy-sb-wrapper>div.simesy-sb-ds-medium {
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.26);
+  box-shadow: 0 0 15px rgba(0,0,0,0.26)
+}
+
+#simesy-sb-wrapper>div.simesy-sb-ds-heavy {
+  -webkit-box-shadow: 2px 5px 15px rgba(0,0,0,0.5);
+  box-shadow: 2px 5px 15px rgba(0,0,0,0.5)
+}
+
+#simesy-sb-wrapper>div.simesy-sb-rc-none {
+  border-radius: 0
+}
+
+#simesy-sb-wrapper>div.simesy-sb-rc-subtle {
+  border-radius: 3px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-rc-medium {
+  border-radius: 6px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-rc-heavy {
+  border-radius: 14px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-small {
+  font-size: 85%;
+  max-width: 600px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-medium {
+  font-size: 95%;
+  max-width: 800px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-large {
+  font-size: 115%;
+  max-width: 1000px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-small .simesy-sb-image-wrapper {
+  width: 95px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-small .message-wrapper {
+  padding: 15px
+}
+
+#simesy-sb-wrapper>div.simesy-sb-large .simesy-sb-image-wrapper {
+  width: 150px
+}
+
+#simesy-sb-wrapper>div:hover {
+  cursor: pointer
+}
+
+#simesy-sb-wrapper.toast-top-center>div,#simesy-sb-wrapper.toast-bottom-center>div {
+  margin-left: auto;
+  margin-right: auto
+}
+
+#simesy-sb-wrapper.toast-top-full-width>div,#simesy-sb-wrapper.toast-bottom-full-width>div {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.toast {
+  background-color: white
+}
+
+.toast-info {
+  background-color: white;
+  color: black !important
+}
+
+@media all and (max-width:600px) {
+  .simesy-sb-top-right,.simesy-sb-top-left,.simesy-sb-bottom-right,.simesy-sb-bottom-left {
+    left: 0;
+    right: 0;
+    top: 0
+  }
+
+  div.simesy-sb-bottom-right,.simesy-sb-bottom-left {
+    top: auto;
+    bottom: 0
+  }
+
+  div#simesy-sb-wrapper>div {
+    margin: 0 !important;
+    width: 100%
+  }
+
+  div#simesy-sb-wrapper {
+    max-width: 100%
+  }
+
+  div#simesy-sb-wrapper>div.simesy-sb-rc-subtle,div#simesy-sb-wrapper>div.simesy-sb-rc-medium,div#simesy-sb-wrapper>div.simesy-sb-rc-heavy {
+    border-radius: 0
+  }
+
+  #simesy-sb-wrapper>div.simesy-sb-large .message-wrapper,#simesy-sb-wrapper>div.simesy-sb-medium .message-wrapper,#simesy-sb-wrapper>div.simesy-sb-small .message-wrapper {
+    width: auto;
+    max-width: 5px
+  }
+
+  #simesy-sb-wrapper .simesy-sb-image-wrapper {
+    width: 80px !important
+  }
+
+  div#simesy-sb-wrapper .message-wrapper {
+    padding: 5px 10px !important
+  }
+
+  div#simesy-sb-wrapper .message-wrapper h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+  }
+}
+
+
+
+
+
+
+
